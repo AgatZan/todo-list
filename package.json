@@ -1,0 +1,22 @@
+{
+  "name": "todo-list",
+  "version": "1.0.0",
+  "description": "pet project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AgatZan/todo-list.git"
+  },
+  "keywords": [
+    "todo"
+  ],
+  "author": "agatzan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AgatZan/todo-list/issues"
+  },
+  "homepage": "https://github.com/AgatZan/todo-list#readme"
+}
