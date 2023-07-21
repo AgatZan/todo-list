@@ -1,0 +1,77 @@
+@import '_vars';
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: map-get($color-scheme , $key:"black" );
+}
+.workplace{
+    position: relative;
+    margin: 0 auto;
+    width: 85%;
+    background-color: map-get($color-scheme , $key:"b-light" );
+    border-radius: 11px;
+    height: 95vh;
+    margin-top: 1%;
+}
+
+.workplace__new-work{
+    display: block;
+        width: 11%;
+        height: 17%;
+
+    border-radius: 50px;
+    border: none;
+
+    position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+
+    font-size: 250%;
+    font-family: cursive;
+    opacity: .6;
+
+    background-color: map-get($color-scheme , $key:light );
+
+    cursor: pointer;
+    user-select: none; 
+
+    transition: opacity .8s cubic-bezier(0.39, 0.575, 0.565, 1), 
+    transform .7s ease-out, 
+    width .5s ease-in, 
+    height .5s ease-in;
+
+    &:hover{
+        opacity: 1;
+    }
+    &:focus{
+        width: 500px;
+        height: 500px;
+        opacity: 0;
+    }
+    &:focus ~ .worlplace__modal-setting{
+        opacity: 1;
+        pointer-events: none;
+    }
+}
+.worlplace__modal-setting {
+    opacity: 0;
+    background-color: map-get($color-scheme , $key:light );
+    pointer-events: none;
+    width: 500px;
+    height: 500px;
+
+    border-radius: 50px;
+    border: none;
+
+    position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+
+    transition: opacity .3s .2s ease-in;
+}
